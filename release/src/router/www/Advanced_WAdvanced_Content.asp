@@ -165,7 +165,7 @@ var sdk_6 = sdk_version_array[0] == "6" ? true:false
 var sdk_7 = sdk_version_array[0] == "7" ? true:false
 var wl_user_rssi_onload = '<% nvram_get("wl_user_rssi"); %>';
 var reboot_needed_time = eval("<% get_default_reboot_time(); %>");
-var orig_region = '<% nvram_get("location_code"); %>';
+var orig_region = 'CN';
 var wl_txpower_orig = '<% nvram_get("wl_txpower"); %>';
 var machine_name = '<% get_machine_name(); %>';
 var machine_arm = (machine_name.search("arm") == -1 && machine_name.search("aarch64") == -1) ? false : true;
